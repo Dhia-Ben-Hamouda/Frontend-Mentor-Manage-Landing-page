@@ -1,7 +1,7 @@
 #home{
     min-height: calc(100vh - 95px);
-    padding:2rem 12vw;
-    padding-right: calc(12vw - 1rem );
+    padding:2rem 10vw;
+    padding-right: calc(10vw - 1rem );
     display: flex;
     align-items: center;
     z-index:5 !important;
