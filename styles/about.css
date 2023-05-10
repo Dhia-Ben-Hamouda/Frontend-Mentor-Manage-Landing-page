@@ -1,57 +1,60 @@
-#about{
-    padding:1rem 10vw;
+#about {
+    padding: 1rem 10vw;
 }
 
-#about .container{
+#about .container {
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
-    gap:2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
-#about .container h2{
+#about .container h2 {
     font-size: 2.5rem;
-    margin-bottom:2rem;
-    color:var(--text);
+    margin-bottom: 2rem;
+    color: var(--text);
 }
 
-#about .container p{
-    color:#777;
+#about .container p {
+    color: #777;
     font-size: 1.125rem;
     line-height: 2rem !important;
+    text-align: justify;
 }
 
-#about .left-container p{
+#about .left-container p {
     position: relative;
+    width:80%;
 }
 
-#about .left-container p::after{
-    content:url("../images/bg-tablet-pattern.svg");
+#about .left-container p::after {
+    content: url("../images/bg-tablet-pattern.svg");
     position: absolute;
-    right:75%;
-    top:200px;
+    right: 75%;
+    top: 200px;
 }
 
-.service .wrapper{
+.service .wrapper {
     display: flex;
     align-items: center;
-    gap:1rem;
-    margin-bottom:1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.service h3{
-    color:var(--text);
+.service h3 {
+    color: var(--text);
 }
 
-.service p{
-    padding-left:4.25rem;
-    padding-right:1.5rem;
-    margin-bottom:2rem;
+.service p {
+    padding-left: 4.25rem;
+    padding-right: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-.num{
+.num {
     background: var(--primary);
-    color:white;
+    color: white;
     font-weight: 500;
-    padding:.5rem 1rem;
+    padding: .5rem 1rem;
     border-radius: 50px;
 }
+

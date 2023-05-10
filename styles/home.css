@@ -1,51 +1,101 @@
-#home{
+#home {
     min-height: calc(100vh - 95px);
-    padding:2rem 10vw;
-    padding-right: calc(10vw - 1rem );
+    padding: 2rem 10vw;
+    padding-right: calc(10vw - 1rem);
     display: flex;
     align-items: center;
-    z-index:5 !important;
+    z-index: 5 !important;
 }
 
-#home .container{
+#home .container {
     display: flex;
     justify-content: space-between;
-    gap:2rem;
-    width:100%;
+    gap: 2rem;
+    width: 100%;
     z-index: 5;
 }
 
-.text-container{
+.text-container {
     width: 50%;
 }
 
-.text-container h1{
+.text-container h1 {
     font-size: 3.5rem;
-    margin:3rem 0rem 2rem;
-    color:var(--text);
+    margin: 3rem 0rem 2rem;
+    color: var(--text);
 }
 
-.text-container p{
-    color:#777;
+.text-container p {
+    color: #777;
     font-size: 1.125rem;
-    line-height:1.75rem;
-    margin-bottom:2rem;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+    width:60%;
+    text-align: justify;
 }
 
-.text-container button{
-    padding:1rem 2rem;
-    border:none;
-    outline:none;
-    border-radius:50px;
-    color:white;
-    background:var(--primary);
+.text-container button {
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    background: var(--primary);
     font-weight: 500;
     box-shadow: 0px 16px 16px -16px var(--primary);
     cursor: pointer;
 }
 
-.illustration-container{
+.illustration-container {
     width: 50%;
     display: flex;
     justify-content: flex-end;
+}
+
+/* mobile devices */
+
+@media(max-width:680px){
+    #home{
+        padding: 2rem 10vw !important;
+    }
+
+    #home .container{
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+
+    .illustration-container{
+        width:100%;
+        justify-content: center;
+    }
+
+    .illustration{
+        width:100%;
+    }
+
+    .text-container{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container h1{
+        font-size: 2rem;
+        text-align: center;
+        margin:0rem;
+    }
+
+    .text-container p{
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .text-container button{
+        margin: 0 auto;
+    }
+}
+
+*{
+    border:1px solid;
 }
