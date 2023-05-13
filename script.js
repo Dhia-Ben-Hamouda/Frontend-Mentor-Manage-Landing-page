@@ -12,7 +12,16 @@ const swiper = new Swiper('.swiper', {
 });
 
 const bars = document.querySelector(".bars");
+const overlay = document.querySelector(".overlay");
 
 bars.addEventListener("click", (e) => {
 	bars.classList.toggle("clicked");
+	overlay.classList.remove("hidden");
+})
+
+overlay.addEventListener("click" , (e) => {
+	if(e.target === overlay){
+		bars.classList.toggle("clicked");
+		overlay.classList.add("hidden");
+	}
 })
