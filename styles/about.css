@@ -1,5 +1,6 @@
 #about {
     padding: 1rem 10vw;
+    overflow-x: clip;
 }
 
 #about .container {
@@ -58,3 +59,40 @@
     border-radius: 50px;
 }
 
+/* mobile devices */
+
+@media(max-width:680px){
+    #about .container{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    #about .container h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #about .container p{
+        padding: 0px;
+        font-size: .9rem;
+    }
+
+    #about .left-container p{
+        width:100%;
+        text-align: center;
+        font-size: .9rem;
+    }
+
+    #about .left-container p::after{
+        top:-675px;
+        right: -455px;
+        transform: scale(.35);
+    }
+
+    .service .wrapper{
+        gap:.5rem;
+    }
+
+    .service h3{
+        font-size: .95rem;
+    }
+}

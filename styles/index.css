@@ -20,7 +20,9 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: 850px -200px;
 }
 
 .tablet {
@@ -32,10 +34,13 @@ body {
 
 /* mobile devices */
 
-@media(max-width:680px){
-    .tablet{
-        transform: scale(.5);
-        right:-90%;
-        top:-45%;
+@media(max-width:680px) {
+    .tablet {
+        display: none;
+    }
+
+    body {
+        background-size: 100%;
+        background-position: 75px -50px;
     }
 }

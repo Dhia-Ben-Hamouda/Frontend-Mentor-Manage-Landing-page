@@ -61,7 +61,6 @@
 
     #home .container{
         flex-direction: column-reverse;
-        overflow: hidden;
     }
 
     .illustration-container{
@@ -94,8 +93,4 @@
     .text-container button{
         margin: 0 auto;
     }
-}
-
-*{
-    border:1px solid;
 }
