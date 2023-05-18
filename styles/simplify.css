@@ -5,7 +5,6 @@
     background-size: 100%;
     background-position: 115px;
     padding: 3rem 10vw;
-
 }
 
 #simplify .wrapper {
@@ -30,6 +29,14 @@
     outline: none;
     font-weight: 500;
     cursor: pointer;
+}
+
+/* large screens */
+
+@media(min-width:1920px){
+    #simplify {
+        padding: 3rem 15vw;
+    }
 }
 
 /* mobile devices */

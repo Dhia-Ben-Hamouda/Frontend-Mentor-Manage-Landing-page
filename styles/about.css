@@ -59,6 +59,14 @@
     border-radius: 50px;
 }
 
+/* large screens */
+
+@media(min-width:1920px){
+    #about{
+        padding: 1rem 15vw;
+    }
+}
+
 /* mobile devices */
 
 @media(max-width:680px){

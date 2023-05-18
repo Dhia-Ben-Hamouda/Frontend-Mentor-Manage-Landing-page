@@ -30,7 +30,7 @@
     font-size: 1.125rem;
     line-height: 1.75rem;
     margin-bottom: 2rem;
-    width:60%;
+    width: 60%;
     text-align: justify;
 }
 
@@ -50,47 +50,79 @@
     width: 50%;
     display: flex;
     justify-content: flex-end;
+    position: relative;
+}
+
+.illustration-container img {
+    z-index: 8;
+}
+
+.illustration-container::before {
+    content: url("../images/bg-tablet-pattern.svg");
+    position: absolute;
+    right: -290px;
+    top: -350px;
+}
+
+/* large screens */
+
+@media(min-width:1920px) {
+    #home {
+        padding: 2rem 15vw;
+        padding-right: calc(15vw - 1rem);
+    }
+
+    .text-container h1 {
+        width: 80%;
+    }
 }
 
 /* mobile devices */
 
-@media(max-width:680px){
-    #home{
+@media(max-width:680px) {
+    #home {
         padding: 2rem 10vw !important;
     }
 
-    #home .container{
+    #home .container {
         flex-direction: column-reverse;
     }
 
-    .illustration-container{
-        width:100%;
+    .illustration-container {
+        width: 100%;
         justify-content: center;
     }
 
-    .illustration{
-        width:100%;
+    .illustration {
+        width: 100%;
     }
 
-    .text-container{
-        width:100%;
+    .text-container {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .text-container h1{
+    .text-container h1 {
         font-size: 2rem;
         text-align: center;
-        margin:0rem;
+        margin: 0rem;
     }
 
-    .text-container p{
+    .text-container p {
         width: 100%;
         text-align: center;
         font-size: 1rem;
     }
 
-    .text-container button{
+    .text-container button {
         margin: 0 auto;
+    }
+
+    .illustration-container::before {
+        transform: scale(.5);
+        right: -340px;
+        top: -400px;
+        z-index:1;
     }
 }

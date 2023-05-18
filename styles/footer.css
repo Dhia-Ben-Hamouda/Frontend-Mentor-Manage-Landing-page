@@ -72,6 +72,14 @@ footer form input {
     padding: 1rem 1.25rem;
 }
 
+/* large screens */
+
+@media(min-width:1920px){
+    footer{
+        padding:2rem 15vw;
+    }
+}
+
 @media(max-width:680px) {
 
     footer{
